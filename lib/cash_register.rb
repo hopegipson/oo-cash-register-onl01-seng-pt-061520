@@ -13,7 +13,8 @@ class CashRegister
   end
 
   def items
-   return @@items
+    @@items.each do|i| puts i
+  end
   end
   
 end
