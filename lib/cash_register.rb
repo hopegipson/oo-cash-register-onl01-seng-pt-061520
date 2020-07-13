@@ -1,21 +1,18 @@
 class CashRegister
 
-  attr_accessor :total
+  attr_accessor :total :items
 
   def initialize
     @total = 0
-    @@items = []
+    @items = []
 
   end
   
   def add_item(title, price, quantity)
-    @@items << title
+    @items << title
     @total += price * quantity
   end
 
-  def items
-    @@items.each do|i| puts i
-  end
-  end
+
   
 end
