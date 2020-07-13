@@ -5,6 +5,8 @@ class CashRegister
 
   def initialize
     @total = 0
+      @@items = []
+
   end
   
   def add_item(title, price)
